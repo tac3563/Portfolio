@@ -1,14 +1,19 @@
-// Variables
+// Variables:
 
+$text-color: #343a40;
+$accent-color: #ff6b6b;
+$bg-color: #e9ecef; 
+$bg-contrast-color: #f8f9fa;
 
+// Mixins:
 
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-// Mixins
-
-
-
-
-// Universal Resets
+// Universal Resets:
 
 * {
     margin: 0;
@@ -20,3 +25,54 @@
     font-size: 10px;
 }
 
+body {
+   background-color:  $bg-color;
+   color: $text-color;
+}
+
+
+// Nav Bar:
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-nav {
+    font-size: 2.5rem;
+    margin: .5em;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+    font-size: 2rem;
+}
+
+.connect {
+    color: $accent-color;
+}
+
+
+li a {
+    text-decoration: none;
+    color: $text-color;
+}
+
+// Header:
+
+.container {
+    height: 100vh;
+    max-width: 100%;
+}
+
+.profile-photo {
+    border-radius: 100%;
+    height: auto;
+    width: 30%;
+    margin: 0 auto;
+    @include flexCenter()
+}

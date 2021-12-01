@@ -8,4 +8,68 @@
 :root {
   font-size: 10px;
 }
+
+body {
+  background-color: #e9ecef;
+  color: #343a40;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left-nav {
+  font-size: 2.5rem;
+  margin: .5em;
+}
+
+.right-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style: none;
+  width: 50%;
+  font-size: 2rem;
+}
+
+.connect {
+  color: #ff6b6b;
+}
+
+li a {
+  text-decoration: none;
+  color: #343a40;
+}
+
+.container {
+  height: 100vh;
+  max-width: 100%;
+}
+
+.profile-photo {
+  border-radius: 100%;
+  height: auto;
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 /*# sourceMappingURL=style.css.map */
