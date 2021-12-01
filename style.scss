@@ -26,6 +26,8 @@ $bg-contrast-color: #f8f9fa;
 }
 
 body {
+
+   font-family: 'Roboto', sans-serif;
    background-color:  $bg-color;
    color: $text-color;
 }
@@ -37,6 +39,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10em;
 }
 
 .left-nav {
@@ -49,17 +52,29 @@ nav {
     justify-content: space-evenly;
     list-style: none;
     width: 50%;
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 .connect {
     color: $accent-color;
 }
 
+.connect:hover {
+    font-weight: 500;
+    transition: ease 0.3s;
+}
+
 
 li a {
     text-decoration: none;
     color: $text-color;
+}
+
+li a:hover {
+    // opacity: 0.8;
+ 
+    color: $accent-color;
+    transition: ease 0.3s;
 }
 
 // Header:
@@ -74,5 +89,51 @@ li a {
     height: auto;
     width: 30%;
     margin: 0 auto;
-    @include flexCenter()
+    margin-bottom: 5em;
+    @include flexCenter();
+}
+
+.name {
+    @include flexCenter();
+    font-size: 5.4rem;
+    font-weight: 400;
+    margin-bottom: .5em;
+    text-transform: uppercase;
+}
+
+.job-title {
+    @include flexCenter();
+    margin-bottom: 1em;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    color: $accent-color;
+    font-weight: 400;
+
+}
+
+.subtext {
+    @include flexCenter();
+    font-size: 2rem;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0.8;
+    margin-bottom: 8em;
+}
+
+.header-CTA {
+    @include flexCenter();
+    margin: 0 auto;
+    font-size: 3.2rem;
+    padding: .5em 1em;
+    border: solid 2px $text-color;
+    border-radius: 16px;
+    color: $accent-color;
+}
+
+.header-CTA:hover {
+    color: $accent-color;
+    background-color: $bg-contrast-color;
+    cursor: pointer;
+    transition: ease 0.3s;
 }
