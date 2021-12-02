@@ -1,45 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Tom Cox Portfolio</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tom Cox Portfolio</title>
+    </head>
+    <body>
+        <!-- Nav -->
 
-    <!-- Nav -->
+        <nav class="navbar">
+            <div class="left-nav">
+                <p>TC Portfolio</p>
+            </div>
+            <ul class="right-nav">
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a class="connect" href="#">Connect ></a></li>
+            </ul>
+        </nav>
 
-    <nav class="navbar">
-      <div class="left-nav">
-          <p>TC Portfolio</p>
+        <!-- Header -->
+        <header>
+            <div class="header-container">
+                <img
+                    src="/assets/profile_photojpg.jpg"
+                    alt=""
+                    class="profile-photo"
+                />
+                <h1 class="name">Tom Cox</h1>
+                <h2 class="job-title">Junior Front-end Developer</h2>
+                <p class="subtext">
+                    Passionate about designing, building, and creating. Looking
+                    for an entry-level junior developer position where i can
+                    develop my skills, build some fun websites, and contribute
+                    to a team.
+                </p>
+                <button class="header-CTA">
+                    <a href="#connect">Find out more</a>
+                </button>
+            </div>
+        </header>
 
-          
-      </div>  
-      <ul class="right-nav">
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a class="connect" href="#">Connect ></a></li>
-     </ul>
-    </nav>
+        <!-- Skills Section -->
 
-    <!-- Header -->
-    <header>
-        <div class="header-container">
-            <img src="/assets/profile_photojpg.jpg" alt="" class="profile-photo">
-            <h1 class="name">Tom Cox</h1>
-            <h2 class="job-title">Junior Front-end Developer</h2>
-            <p class="subtext">Passionate about designing, building, and creating. Looking for an entry-level junior developer position where i can develop my skills, build some fun websites, and contribute to a team. </p>
-            <button class="header-CTA">Find out more</button>
-        </div>
-    </header>
+        <!-- Projects Section -->
 
-    <!-- Skills Section -->
+        <!-- Connect Section -->
 
-    
-
-</body>
+        <section class="connect-section" id="connect">
+            <h1 class="connect-title">Connect with me</h1>
+            <p>
+                You can find a copy of my CV and cover letter on my LinkedIn
+                page along with my contact information.
+            </p>
+            <p>
+                Check out my GitHub for the source for my projects and a history
+                of my commits. You can also check out my CodePen to see the
+                small projects I am working on.
+            </p>
+            <div class="connect-images">
+                <img src="/assets/linkedin.png" alt="" class="connect-image" />
+                <img src="/assets/github.png" alt="" class="connect-image" />
+                <img src="/assets/codepen.png" alt="" class="connect-image" />
+            </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
 </html>

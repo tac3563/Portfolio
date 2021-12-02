@@ -29,7 +29,7 @@ nav {
 }
 
 .left-nav {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin: 0.5em;
 }
 
@@ -67,8 +67,11 @@ li a:hover {
 }
 
 .container {
-  height: 100vh;
   max-width: 100%;
+}
+
+.header-container {
+  height: 90vh;
 }
 
 .profile-photo {
@@ -132,11 +135,11 @@ li a:hover {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2rem;
-  max-width: 70%;
   text-align: center;
   margin: 0 auto;
   opacity: 0.8;
   margin-bottom: 8em;
+  max-width: 70%;
 }
 
 .header-CTA {
@@ -154,6 +157,12 @@ li a:hover {
   padding: 0.5em 1em;
   border: solid 2px #343a40;
   border-radius: 16px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-CTA a {
+  text-decoration: none;
   color: #ff6b6b;
 }
 
@@ -163,5 +172,38 @@ li a:hover {
   cursor: pointer;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+}
+
+.connect-section {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+}
+
+.connect-title {
+  font-size: 5rem;
+  color: #ff6b6b;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding-top: 1em;
+}
+
+.connect-section p {
+  font-size: 2rem;
+  max-width: 90%;
+  margin: 1em auto;
+}
+
+.connect-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 7em;
 }
 /*# sourceMappingURL=style.css.map */

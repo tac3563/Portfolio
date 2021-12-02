@@ -41,7 +41,7 @@ nav {
 }
 
 .left-nav {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0.5em;
 }
 
@@ -77,8 +77,13 @@ li a:hover {
 // Header:
 
 .container {
-    height: 100vh;
+    // height: 100vh;
     max-width: 100%;
+}
+
+.header-container {
+    // margin-bottom: 10em;
+    height: 90vh;
 }
 
 .profile-photo {
@@ -110,11 +115,11 @@ li a:hover {
 .subtext {
     @include flexCenter();
     font-size: 2rem;
-    max-width: 70%;
     text-align: center;
     margin: 0 auto;
     opacity: 0.8;
     margin-bottom: 8em;
+    max-width: 70%;
 }
 
 .header-CTA {
@@ -124,6 +129,11 @@ li a:hover {
     padding: 0.5em 1em;
     border: solid 2px $text-color;
     border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.header-CTA a {
+    text-decoration: none;
     color: $accent-color;
 }
 
@@ -132,4 +142,37 @@ li a:hover {
     background-color: $bg-contrast-color;
     cursor: pointer;
     transition: ease 0.3s;
+}
+
+// Connect Section
+
+.connect-section {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: $bg-contrast-color;
+}
+
+.connect-title {
+    font-size: 5rem;
+    color: $accent-color;
+    // padding: 1em 2em 1em 1em;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.connect-section p {
+    font-size: 2rem;
+    max-width: 90%;
+    margin: 1em auto;
+}
+
+.connect-images {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: 7em;
+    // margin-bottom: 5em;
 }
