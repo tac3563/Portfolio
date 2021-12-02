@@ -4,6 +4,9 @@ $text-color: #343a40;
 $accent-color: #ff6b6b;
 $bg-color: #e9ecef;
 $bg-contrast-color: #f8f9fa;
+$bg-skills-section: #f1f3f5;
+$title-fontSize: 5rem;
+$text-fontSize: 2rem;
 
 // Mixins:
 
@@ -11,6 +14,13 @@ $bg-contrast-color: #f8f9fa;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@mixin titleBoxing() {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    padding-top: 1em;
 }
 
 // Universal Resets:
@@ -144,6 +154,29 @@ li a:hover {
     transition: ease 0.3s;
 }
 
+// Skills Section
+
+.skills-section {
+    max-width: 100%;
+    background-color: $bg-skills-section;
+    padding-bottom: 1em;
+    height: 90vh;
+}
+
+.skills-title {
+    font-size: $title-fontSize;
+    color: $accent-color;
+    @include flexCenter();
+    @include titleBoxing();
+    text-transform: uppercase;
+}
+
+.skills-section p {
+    font-size: $text-fontSize;
+    max-width: 80%;
+    margin: 1em auto;
+}
+
 // Connect Section
 
 .connect-section {
@@ -155,16 +188,12 @@ li a:hover {
 .connect-title {
     font-size: 5rem;
     color: $accent-color;
-    // padding: 1em 2em 1em 1em;
-    max-width: 90%;
-    margin: 0 auto;
-    margin-bottom: 1em;
-    padding-top: 1em;
+    @include titleBoxing();
 }
 
 .connect-section p {
-    font-size: 2rem;
-    max-width: 90%;
+    font-size: $text-fontSize;
+    max-width: 80%;
     margin: 1em auto;
 }
 
@@ -175,4 +204,21 @@ li a:hover {
     margin: 0 auto;
     margin-top: 7em;
     // margin-bottom: 5em;
+}
+
+.connect-image {
+    margin-bottom: 4em;
+}
+
+.back-top {
+    text-decoration: none;
+    color: $text-color;
+    font-size: $text-fontSize;
+    @include flexCenter();
+    padding: 1em;
+}
+
+.back-top:hover {
+    font-weight: 500;
+    transition: ease 0.3s;
 }

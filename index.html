@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,19 +14,20 @@
     <body>
         <!-- Nav -->
 
-        <nav class="navbar">
+        <nav class="navbar" id="nav">
             <div class="left-nav">
                 <p>TC Portfolio</p>
             </div>
             <ul class="right-nav">
-                <li><a href="#">Skills</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#">Projects</a></li>
-                <li><a class="connect" href="#">Connect ></a></li>
+                <li><a class="connect" href="#connect">Connect</a></li>
             </ul>
         </nav>
 
         <!-- Header -->
-        <header>
+
+        <header id="header">
             <div class="header-container">
                 <img
                     src="/assets/profile_photojpg.jpg"
@@ -38,17 +38,30 @@
                 <h2 class="job-title">Junior Front-end Developer</h2>
                 <p class="subtext">
                     Passionate about designing, building, and creating. Looking
-                    for an entry-level junior developer position where i can
+                    for an entry-level junior developer position where I can
                     develop my skills, build some fun websites, and contribute
                     to a team.
                 </p>
                 <button class="header-CTA">
-                    <a href="#connect">Find out more</a>
+                    <a href="#skills">Find out more</a>
                 </button>
             </div>
         </header>
 
         <!-- Skills Section -->
+
+        <section class="skills-section" id="skills">
+            <h1 class="skills-title">Skills</h1>
+            <p>
+                Web development Is a fast-moving, constantly evolving industry.
+                I love to learn new skills and add more tools to my toolbox
+                which Is why I find being a developer so exciting!
+            </p>
+            <p>
+                Here is an (always growing) list of some of the tools i have
+                used when building my own projects:
+            </p>
+        </section>
 
         <!-- Projects Section -->
 
@@ -66,10 +79,31 @@
                 small projects I am working on.
             </p>
             <div class="connect-images">
-                <img src="/assets/linkedin.png" alt="" class="connect-image" />
-                <img src="/assets/github.png" alt="" class="connect-image" />
-                <img src="/assets/codepen.png" alt="" class="connect-image" />
+                <a
+                    href="https://www.linkedin.com/in/tom-cox-a2b357215/"
+                    target="_blank"
+                    ><img
+                        src="/assets/linkedin.png"
+                        alt="linkedIn logo"
+                        class="connect-image"
+                /></a>
+                <a href="https://github.com/tac3563" target="_blank"
+                    ><img
+                        src="/assets/github.png"
+                        alt="GitHub Logo"
+                        class="connect-image"
+                /></a>
+
+                <a
+                    href="https://codepen.io/tac3563-the-reactor/pens/popular"
+                    target="_blank"
+                    ><img
+                        src="/assets/codepen.png"
+                        alt="codePen Logo"
+                        class="connect-image"
+                /></a>
             </div>
+            <a class="back-top" href="#nav">Back to top</a>
         </section>
         <script src="script.js"></script>
     </body>
