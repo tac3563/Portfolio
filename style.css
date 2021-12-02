@@ -201,9 +201,62 @@ li a:hover {
 }
 
 .skills-section p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   max-width: 80%;
   margin: 1em auto;
+}
+
+.projects-title-section {
+  max-width: 100%;
+  margin-bottom: 7em;
+  background-color: #f8f9fa;
+}
+
+.projects-title {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ff6b6b;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.projects-title-section p {
+  max-width: 80%;
+  margin: 1em auto;
+  font-size: 2.5rem;
+  line-height: 1.4;
+  padding-bottom: 2em;
+}
+
+.my-projects {
+  height: 90vh;
+}
+
+.my-projects h3 {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+  max-width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
 }
 
 .connect-section {
@@ -222,9 +275,15 @@ li a:hover {
 }
 
 .connect-section p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   max-width: 80%;
   margin: 1em auto;
+}
+
+.connect-section strong,
+a {
+  color: #ff6b6b;
+  text-decoration: none;
 }
 
 .connect-images {
@@ -246,7 +305,7 @@ li a:hover {
 .back-top {
   text-decoration: none;
   color: #343a40;
-  font-size: 2rem;
+  font-size: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

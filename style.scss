@@ -6,7 +6,7 @@ $bg-color: #e9ecef;
 $bg-contrast-color: #f8f9fa;
 $bg-skills-section: #f1f3f5;
 $title-fontSize: 5rem;
-$text-fontSize: 2rem;
+$text-fontSize: 2.5rem;
 
 // Mixins:
 
@@ -78,8 +78,6 @@ li a {
 }
 
 li a:hover {
-    // opacity: 0.8;
-
     color: $accent-color;
     transition: ease 0.3s;
 }
@@ -87,12 +85,10 @@ li a:hover {
 // Header:
 
 .container {
-    // height: 100vh;
     max-width: 100%;
 }
 
 .header-container {
-    // margin-bottom: 10em;
     height: 90vh;
 }
 
@@ -177,6 +173,42 @@ li a:hover {
     margin: 1em auto;
 }
 
+// My Projects Section
+
+.projects-title-section {
+    max-width: 100%;
+    margin-bottom: 7em;
+    background-color: $bg-contrast-color;
+}
+
+.projects-title {
+    @include titleBoxing();
+    @include flexCenter();
+    color: $accent-color;
+    font-size: $title-fontSize;
+    text-transform: uppercase;
+}
+
+.projects-title-section p {
+    max-width: 80%;
+    margin: 1em auto;
+    font-size: $text-fontSize;
+    line-height: 1.4;
+    padding-bottom: 2em;
+}
+
+.my-projects {
+    height: 90vh;
+}
+
+.my-projects h3 {
+    font-size: 2.5rem;
+    color: $accent-color;
+    max-width: 50%;
+    @include flexCenter();
+    font-weight: 400;
+}
+
 // Connect Section
 
 .connect-section {
@@ -197,13 +229,18 @@ li a:hover {
     margin: 1em auto;
 }
 
+.connect-section strong,
+a {
+    color: $accent-color;
+    text-decoration: none;
+}
+
 .connect-images {
     display: flex;
     justify-content: space-evenly;
     max-width: 50%;
     margin: 0 auto;
     margin-top: 7em;
-    // margin-bottom: 5em;
 }
 
 .connect-image {
