@@ -302,17 +302,34 @@ li a:hover {
   line-height: 1.4;
 }
 
+.projects-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 'top-left top-right' 'btm-left btm-right';
+  justify-items: center;
+}
+
 .my-projects {
   height: 90vh;
-  margin-top: 5em;
+  margin-top: 7em;
+  padding-top: 7em;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .my-projects h3 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   color: #ff6b6b;
-  max-width: 50%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+  margin-bottom: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
+  display: flex;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -320,7 +337,86 @@ li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-weight: 400;
+}
+
+.portfolio-project-img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: top-right;
+  width: 100%;
+}
+
+.portfolio-project-img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.project-card {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: btm-left;
+  width: 100%;
+}
+
+.portfolio-card {
+  width: 100%;
+  margin: 0 auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: top-left;
+}
+
+.agency-title {
+  max-width: 100%;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  margin-left: 0.5em;
+}
+
+.design-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 5em;
+}
+
+.dev-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.landing-project {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: btm-right;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  width: 100%;
+}
+
+.landing-project:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .connect-section {

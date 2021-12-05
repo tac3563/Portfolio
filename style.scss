@@ -236,17 +236,90 @@ li a:hover {
     @include textStyles();
 }
 
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'top-left top-right'
+        'btm-left btm-right';
+    justify-items: center;
+}
+
 .my-projects {
     height: 90vh;
-    margin-top: 5em;
+    margin-top: 7em;
+    padding-top: 7em;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .my-projects h3 {
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     color: $accent-color;
-    max-width: 50%;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 500;
+    margin-bottom: 3em;
+    display: flex;
     @include flexCenter();
-    font-weight: 400;
+}
+
+.portfolio-project-img {
+    grid-area: top-right;
+    width: 100%;
+}
+.portfolio-project-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.project-card {
+    grid-area: btm-left;
+    width: 100%;
+}
+
+.portfolio-card {
+    width: 100%;
+    margin: 0 auto;
+    grid-area: top-left;
+}
+
+.agency-title {
+    max-width: 100%;
+}
+
+.card-title {
+    font-size: $text-fontSize;
+    margin-left: 0.5em;
+}
+
+.design-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.dev-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.landing-project {
+    grid-area: btm-right;
+    align-self: end;
+    width: 100%;
+}
+
+.landing-project:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 // Connect Section
