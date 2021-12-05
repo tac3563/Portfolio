@@ -43,8 +43,10 @@ $text-fontSize: 2.5rem;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $bg-color;
+    background-color: #dee2e6;
     color: $text-color;
+    max-width: 1700px;
+    margin: 0 auto;
 }
 
 // Nav Bar:
@@ -53,7 +55,9 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10em;
+    padding-bottom: 10em;
+    position: relative;
+    background-color: $bg-color;
 }
 
 .left-nav {
@@ -88,6 +92,22 @@ li a:hover {
     transition: ease 0.3s;
 }
 
+.toggle-btn {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    top: 2.5rem;
+    right: 3rem;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-btn .bar {
+    height: 3px;
+    background-color: $text-color;
+}
+
 // Header:
 
 .container {
@@ -96,12 +116,13 @@ li a:hover {
 
 .header-container {
     height: 90vh;
+    background-color: $bg-color;
 }
 
 .profile-photo {
     border-radius: 100%;
     height: auto;
-    width: 30%;
+    max-width: 35%;
     margin: 0 auto;
     margin-bottom: 5em;
     @include flexCenter();
@@ -155,14 +176,13 @@ li a:hover {
     background-color: $bg-contrast-color;
     cursor: pointer;
     transition: ease 0.3s;
+    justify-items: center;
 }
 
-// Skills Section
+// Skills Section:
 
 .skills-section {
-    max-width: 100%;
     background-color: $bg-skills-section;
-    padding-bottom: 1em;
 }
 
 .skills-title {
@@ -170,7 +190,7 @@ li a:hover {
     color: $accent-color;
     @include flexCenter();
     @include titleBoxing();
-    text-transform: uppercase;
+    max-width: 100%;
 }
 
 .skills-section p {
@@ -182,7 +202,9 @@ li a:hover {
 
 .skills-grid {
     max-width: 100%;
-    margin: 4em;
+    margin: 0 4em;
+    margin-top: 3em;
+    padding-bottom: 5em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     font-size: $text-fontSize;
@@ -242,15 +264,14 @@ li a:hover {
     grid-template-areas:
         'top-left top-right'
         'btm-left btm-right';
-    justify-items: center;
+    // justify-items: center;
+    padding: 10em 0;
 }
 
 .my-projects {
-    height: 90vh;
-    margin-top: 7em;
-    padding-top: 7em;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
+    background-color: $bg-skills-section;
 }
 
 .my-projects h3 {
@@ -261,32 +282,22 @@ li a:hover {
     margin: 0 auto;
     font-weight: 500;
     margin-bottom: 3em;
-    display: flex;
-    @include flexCenter();
 }
 
-.portfolio-project-img {
-    grid-area: top-right;
-    width: 100%;
-}
-.portfolio-project-img:hover {
-    cursor: pointer;
-    opacity: 0.8;
+.portfolio-card {
+    grid-area: top-left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-card {
     grid-area: btm-left;
-    width: 100%;
-}
-
-.portfolio-card {
-    width: 100%;
-    margin: 0 auto;
-    grid-area: top-left;
-}
-
-.agency-title {
-    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .card-title {
@@ -295,26 +306,28 @@ li a:hover {
 }
 
 .design-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
+    @include flexCenter();
     margin-bottom: 5em;
 }
 
 .dev-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 50%;
-    margin: 0 auto;
+    @include flexCenter();
+    margin-bottom: 5em;
+}
+
+.portfolio-project-img {
+    grid-area: top-right;
+    max-width: 100%;
+}
+.portfolio-project-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 .landing-project {
     grid-area: btm-right;
     align-self: end;
-    width: 100%;
+    max-width: 100%;
 }
 
 .landing-project:hover {
@@ -372,4 +385,70 @@ a {
 .back-top:hover {
     font-weight: 500;
     transition: ease 0.3s;
+}
+
+// Media Queries:
+
+@media (max-width: 1100px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'top-left'
+            'top-right'
+            'btm-left'
+            'btm-right';
+        justify-items: center;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .portfolio-card,
+    .project-card {
+        margin-bottom: 4em;
+        max-width: 100%;
+    }
+
+    .portfolio-project-img {
+        margin-bottom: 4em;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .connect-images {
+        max-width: 80%;
+    }
+}
+@media (max-width: 883px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+        max-width: 70%;
+        margin: 0 auto;
+        margin-top: 3em;
+    }
+}
+
+@media (max-width: 749px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .right-nav {
+        display: none;
+    }
+    .toggle-btn {
+        display: flex;
+    }
+    .right-nav.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right-nav li {
+        padding: 1em;
+    }
+    .right-nav li:hover {
+        background-color: $bg-contrast-color;
+    }
 }
