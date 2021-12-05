@@ -115,7 +115,7 @@ li a:hover {
 }
 
 .header-container {
-    height: 90vh;
+    padding-bottom: 10em;
     background-color: $bg-color;
 }
 
@@ -143,6 +143,7 @@ li a:hover {
     text-transform: uppercase;
     color: $accent-color;
     font-weight: 400;
+    text-align: center;
 }
 
 .subtext {
@@ -248,12 +249,14 @@ li a:hover {
     @include titleBoxing();
     @include flexCenter();
     color: $accent-color;
+    text-align: center;
     font-size: $title-fontSize;
     text-transform: uppercase;
 }
 
 .projects-title-section p {
     max-width: 75%;
+    text-align: center;
     margin: 1em auto;
     @include textStyles();
 }
@@ -345,6 +348,7 @@ li a:hover {
 
 .connect-title {
     font-size: 5rem;
+    text-align: center;
     color: $accent-color;
     @include titleBoxing();
 }
@@ -450,5 +454,22 @@ a {
     }
     .right-nav li:hover {
         background-color: $bg-contrast-color;
+    }
+}
+
+@media (max-width: 400px) {
+    .subtext {
+        margin-bottom: 3em;
+    }
+    .connect-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo {
+        max-width: 60%;
+    }
+    .header-CTA {
+        max-width: 60%;
+        font-size: 2rem;
     }
 }

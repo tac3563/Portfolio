@@ -96,7 +96,7 @@ li a:hover {
 }
 
 .header-container {
-  height: 90vh;
+  padding-bottom: 10em;
   background-color: #e9ecef;
 }
 
@@ -148,6 +148,7 @@ li a:hover {
   text-transform: uppercase;
   color: #ff6b6b;
   font-weight: 400;
+  text-align: center;
 }
 
 .subtext {
@@ -317,12 +318,14 @@ li a:hover {
       -ms-flex-align: center;
           align-items: center;
   color: #ff6b6b;
+  text-align: center;
   font-size: 5rem;
   text-transform: uppercase;
 }
 
 .projects-title-section p {
   max-width: 75%;
+  text-align: center;
   margin: 1em auto;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
@@ -456,6 +459,7 @@ li a:hover {
 
 .connect-title {
   font-size: 5rem;
+  text-align: center;
   color: #ff6b6b;
   max-width: 80%;
   margin: 0 auto;
@@ -586,6 +590,28 @@ a {
   }
   .right-nav li:hover {
     background-color: #f8f9fa;
+  }
+}
+
+@media (max-width: 400px) {
+  .subtext {
+    margin-bottom: 3em;
+  }
+  .connect-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .profile-photo {
+    max-width: 60%;
+  }
+  .header-CTA {
+    max-width: 60%;
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
