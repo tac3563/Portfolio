@@ -593,7 +593,7 @@ a {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 449px) {
   .subtext {
     margin-bottom: 3em;
   }
@@ -612,6 +612,14 @@ a {
   .header-CTA {
     max-width: 60%;
     font-size: 2rem;
+  }
+  .landing-project {
+    height: auto;
+    width: 300px;
+  }
+  .portfolio-project-img {
+    height: auto;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */
