@@ -14,6 +14,7 @@ $('.back-top').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 800);
     return false;
 });
+
 $('a[href^="#"]').on('click', function (event) {
     var target = $(this.getAttribute('href'));
 
