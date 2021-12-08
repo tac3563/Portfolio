@@ -122,7 +122,7 @@ li a:hover {
 .profile-photo {
     border-radius: 100%;
     height: auto;
-    max-width: 35%;
+    max-width: 25%;
     margin: 0 auto;
     margin-bottom: 5em;
     @include flexCenter();
@@ -394,6 +394,9 @@ a {
 // Media Queries:
 
 @media (max-width: 1100px) {
+    .profile-photo {
+        max-width: 40%;
+    }
     .projects-grid {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -432,6 +435,9 @@ a {
 }
 
 @media (max-width: 749px) {
+    .profile-photo {
+        max-width: 50%;
+    }
     nav {
         flex-direction: column;
         align-items: flex-start;
