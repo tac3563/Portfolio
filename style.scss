@@ -393,6 +393,12 @@ a {
 
 // Media Queries:
 
+@media (max-width: 1380px) {
+    .profile-photo {
+        max-width: 35%;
+    }
+}
+
 @media (max-width: 1100px) {
     .profile-photo {
         max-width: 40%;
