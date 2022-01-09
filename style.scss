@@ -43,7 +43,7 @@ $text-fontSize: 2.5rem;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: $bg-color;
+    // background-color: $bg-color;
     color: $text-color;
     max-width: 1700px;
     margin: 0 auto;
@@ -57,7 +57,7 @@ nav {
     align-items: center;
     padding-bottom: 10em;
     position: relative;
-    background-color: $bg-color;
+    // background-color: $bg-color;
 }
 
 .left-nav {
@@ -116,7 +116,7 @@ li a:hover {
 
 .header-container {
     padding-bottom: 10em;
-    background-color: $bg-color;
+    // background-color: $bg-color;
 }
 
 .profile-photo {
