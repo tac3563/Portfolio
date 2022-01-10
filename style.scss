@@ -431,6 +431,10 @@ a {
     }
 }
 @media (max-width: 883px) {
+    body {
+        text-align: center;
+    }
+
     .skills-grid {
         grid-template-columns: 1fr;
         max-width: 70%;
@@ -474,10 +478,6 @@ a {
 }
 
 @media (max-width: 449px) {
-    body {
-        text-align: center;
-    }
-
     .header-container {
         height: auto;
     }
