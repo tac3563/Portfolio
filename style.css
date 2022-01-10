@@ -95,6 +95,7 @@ li a:hover {
 
 .header-container {
   padding-bottom: 10em;
+  height: 100vh;
 }
 
 .profile-photo {
@@ -322,7 +323,6 @@ li a:hover {
 
 .projects-title-section p {
   max-width: 75%;
-  text-align: center;
   margin: 1em auto;
   font-size: 2.5rem;
   letter-spacing: 0.1rem;
@@ -608,6 +608,12 @@ a {
 }
 
 @media (max-width: 449px) {
+  body {
+    text-align: center;
+  }
+  .header-container {
+    height: auto;
+  }
   .subtext {
     margin-bottom: 3em;
   }

@@ -116,7 +116,7 @@ li a:hover {
 
 .header-container {
     padding-bottom: 10em;
-    // background-color: $bg-color;
+    height: 100vh;
 }
 
 .profile-photo {
@@ -256,7 +256,6 @@ li a:hover {
 
 .projects-title-section p {
     max-width: 75%;
-    text-align: center;
     margin: 1em auto;
     @include textStyles();
 }
@@ -475,6 +474,14 @@ a {
 }
 
 @media (max-width: 449px) {
+    body {
+        text-align: center;
+    }
+
+    .header-container {
+        height: auto;
+    }
+
     .subtext {
         margin-bottom: 3em;
     }
